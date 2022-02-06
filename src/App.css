@@ -1,38 +1,180 @@
+* {
+  font-family: "Open Sans", cursive;
+  box-sizing: border-box;
+}
+
 .App {
+  background-color: #f5e6e8;
+  height: 100vh;
+}
+
+.field {
+  width: 100%;
+  padding: 1rem;
+  border-radius: 6px;
+  border: none;
+  outline-color: #ef476f;
+  font-size: medium;
+}
+.styleFix {
+  width: 30%;
+  margin: 12.5% auto;
+}
+button {
+  padding: 1rem;
+  width: 100%;
+  display: block;
+  border: none;
+  border-radius: 6px;
+  background-color: #ef476f;
+  color: white;
+  font-size: medium;
+  text-transform: uppercase;
+  letter-spacing: 1.2px;
+  cursor: pointer;
+}
+
+footer {
+  display: block;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  background-color: #ef476f;
+  color: white;
+  padding: 1.5rem;
   text-align: center;
+  font-weight: bolder;
+  font-size: large;
+  letter-spacing: 2px;
+  text-transform: uppercase;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.modal {
+  position: fixed;
+  display: block;
+  background-color: white;
+  width: 40%;
+  height: 60vh;
+  top: 20%;
+  left: 30%;
+  right: 30%;
+  text-align: center;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1);
+}
+.closeBtn {
+  padding: 0.6rem;
+  background-color: #ef476f;
+  font-weight: bolder;
+  display: block;
+  position: absolute;
+  left: 95%;
+  right: 0;
+  color: white;
+  cursor: pointer;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.modalFix {
+  width: 25%;
+  margin: 0 auto;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.modal .letter {
+  font-size: 6rem;
+  border: 12px solid #ef476f;
+  border-radius: 50%;
+}
+.context {
+  color: #ef476f;
+}
+header {
+  padding: 1.5rem;
+  text-align: center;
+  background-color: #ef476f;
+  color: white;
+  font-weight: bolder;
+  font-size: large;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+#card {
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+}
+#card-body {
+  color: rgb(105, 104, 104);
+}
+
+#form {
+  padding: 1rem;
+  background-color: whitesmoke;
+}
+
+.icon-btn {
+  border-radius: 50%;
+  border: none;
+  background-color: blueviolet;
+  color: white;
+  padding: 0.3rem;
+  margin-right: 0.2rem;
+  margin-left: 0.2rem;
+  margin-bottom: 1rem;
+}
+.product {
+  margin-bottom: 1rem;
+  background-color: whitesmoke;
+  border: 1px solid #ccc;
+  padding: 0.5rem;
+}
+
+.product_container {
+  padding: 0.5rem;
+  background-color: white;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  width: 40%;
+}
+.product_item {
+  display: flex;
+  flex-direction: column;
+}
+.prod_container {
+  display: flex;
+}
+.img {
+  margin-right: 0.5rem;
+}
+.main_container {
+  display: flex;
+  justify-content: space-between;
+}
+.cart_btn {
+  background-color: blueviolet;
   color: white;
+  border: none;
+  padding: 0.5rem;
+  width: 100%;
 }
 
-.App-link {
-  color: #61dafb;
+.cart {
+  text-align: left;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@media only screen and (max-width: 625px) {
+  .styleFix {
+    width: 80%;
   }
-  to {
-    transform: rotate(360deg);
+  .modal {
+    left: 5%;
+    right: 5%;
+    width: 90%;
+    top: 15%;
+    height: 70vh;
+  }
+  .modalFix {
+    width: 40%;
+  }
+  .closeBtn {
+    left: 90%;
   }
 }
