@@ -3,7 +3,7 @@ import React, { useState } from "react";
 import "./App.css";
 import Button from "./components/Button";
 import Field from "./components/Field";
-import Footer from "./components/Footer";
+// import Footer from "./components/Footer";
 // import { AddPost } from "./components/AddPost";
 // import { Counter } from "./components/Counter";
 // import { DisplayPost } from "./components/DisplayPost";
