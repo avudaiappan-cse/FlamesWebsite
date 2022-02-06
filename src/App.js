@@ -109,7 +109,7 @@ function App() {
           placeholder={"Calculate"}
         />
       </div>
-      <Footer placeholder={"\u{2665} Made by 90's Kid"} />
+      {/* <Footer placeholder={"\u{2665} Made by 90's Kid"} /> */}
       {/* <div className="main_container">
         <div className="product_container">
           {value.map((i) => (
