@@ -69,9 +69,9 @@ function App() {
       default:
         setContext("Oops!");
     }
-    setModalBool(!modalBool);
     setUserName("");
     setPartnerName("");
+    setModalBool(!modalBool);
   };
 
   return (
@@ -90,6 +90,7 @@ function App() {
           type={"text"}
           onChange={(e) => setUserName(e.target.value)}
           placeholder={"Your Name"}
+          value={userName}
         />
         <br />
         <br />
@@ -97,6 +98,7 @@ function App() {
           type={"text"}
           onChange={(e) => setPartnerName(e.target.value)}
           placeholder={"Your Partner's Name"}
+          value={partnerName}
         />
         <br />
         <br />

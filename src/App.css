@@ -18,7 +18,7 @@
 }
 .styleFix {
   width: 30%;
-  margin: 12.5% auto;
+  margin: 12% auto;
 }
 button {
   padding: 1rem;
@@ -36,12 +36,12 @@ button {
 
 footer {
   display: block;
-  position: fixed;
+  position: absolute;
   width: 100%;
   bottom: 0;
   background-color: #ef476f;
   color: white;
-  padding: 1.5rem;
+  padding: 1rem;
   text-align: center;
   font-weight: bolder;
   font-size: large;
